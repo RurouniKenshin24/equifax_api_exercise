@@ -1,0 +1,180 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1463000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the home page",
+            "match": {
+              "location": "com.amazon.step_definitions.SearchItemStepDefs.user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1592000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user search \"qa testing for beginners\" by using search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qa testing for beginners\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.amazon.step_definitions.SearchItemStepDefs.user_search_by_using_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should be able to see title as a \"Amazon.com : qa testing for beginners\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Amazon.com : qa testing for beginners\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.amazon.step_definitions.SearchItemStepDefs.user_should_be_able_to_see_title_as_a(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-09T09:05:56.947Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1686000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.amazon.step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Checkout item",
+        "description": "",
+        "id": "as-a-user-i-want-to-be-able-to-checkout-item-that-in-the-user-cart;checkout-item",
+        "after": [
+          {
+            "result": {
+              "duration": 645000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.amazon.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2417000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on the \"1\"st item on the listed items",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 20
+                }
+              ],
+              "location": "com.amazon.step_definitions.SearchItemStepDefs.user_clicks_on_the_st_item_on_the_listed_items(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 148000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should be able to see same price in the item page",
+            "match": {
+              "location": "com.amazon.step_definitions.SearchItemStepDefs.user_should_be_able_to_see_same_price()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1063000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on the add to cart button",
+            "match": {
+              "location": "com.amazon.step_definitions.AddItemStepDefs.user_clicks_on_the_add_to_cart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user should be able to see same price in the cart page",
+            "match": {
+              "location": "com.amazon.step_definitions.AddItemStepDefs.user_should_be_able_to_see_same_price_in_the_cart_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 486000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks on the proceed to checkout button",
+            "match": {
+              "location": "com.amazon.step_definitions.CheckoutItemStepDefs.user_clicks_on_the_proceed_to_checkout_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user should be able to see same price in the checkout page",
+            "match": {
+              "location": "com.amazon.step_definitions.CheckoutItemStepDefs.user_should_be_able_to_see_same_price_in_the_checkout_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As a user I want to be able to checkout item that in the user cart",
+    "description": "",
+    "id": "as-a-user-i-want-to-be-able-to-checkout-item-that-in-the-user-cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CheckoutItem.feature",
+    "tags": []
+  }
+]
